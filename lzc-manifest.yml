@@ -1,0 +1,36 @@
+name: Cloudflared UI
+package: community.lazycat.czyt.cfui
+version: 0.1.2
+description: "一个现代化的Cloudflare Tunnel (cloudflared)管理面板。"
+homepage: https://github.com/dockers-x/cfui
+author: czyt
+application:
+  subdomain: cfui
+  background_task: true
+  public_path:
+    - /
+
+  upstreams:
+    - location: /
+      backend: http://host.lzcapp:14333/
+
+services:
+  cfui:
+    network_mode: host
+    user: root
+    # czyt/cfui:v0.1.2
+    image: registry.lazycat.cloud/czyt/czyt/cfui:b8ac3ab4f444ac7a
+    binds:
+      - /lzcapp/var/data:/app/data
+    environment:
+      - PORT=14333
+      - DATA_DIR=/app/data
+
+locales:
+  zh:
+    name: "Cloudflared UI"
+    description: "一个现代化的Cloudflare Tunnel (cloudflared)管理面板。"
+
+  en:
+    name: "Cloudflared UI"
+    description: "A modern web-based control panel for managing Cloudflare Tunnel (cloudflared) with an intuitive interface."
