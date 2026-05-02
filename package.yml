@@ -1,0 +1,16 @@
+package: community.lazycat.czyt.cfui
+version: 0.2.13
+name: Cloudflared UI
+description: "一个现代化的Cloudflare Tunnel (cloudflared)管理面板。"
+min_os_version: 1.5.0
+homepage: https://github.com/dockers-x/cfui
+author: czyt
+
+locales:
+  zh:
+    name: "Cloudflared UI"
+    description: "一个现代化的Cloudflare Tunnel (cloudflared)管理面板。"
+
+  en:
+    name: "Cloudflared UI"
+    description: "A modern web-based control panel for managing Cloudflare Tunnel (cloudflared) with an intuitive interface."
