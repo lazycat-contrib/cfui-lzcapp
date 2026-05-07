@@ -12,8 +12,8 @@ services:
   cfui:
     network_mode: host
     user: root
-    # czyt/cfui:v0.2.20
-    image: registry.lazycat.cloud/czyt/czyt/cfui:0c024ee39d9ef734
+    # czyt/cfui:v0.2.21
+    image: registry.lazycat.cloud/czyt/czyt/cfui:e5347200033f56e0
     binds:
       - /lzcapp/var/data:/app/data
       - /lzcapp/var/logs:/app/logs
