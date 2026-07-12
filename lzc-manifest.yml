@@ -3,16 +3,15 @@ application:
   background_task: true
   public_path:
     - /
-
   upstreams:
     - location: /
       backend: http://host.lzcapp:14333/
-
 services:
   cfui:
     network_mode: host
     user: root
     # czyt/cfui:v0.9.6
+    # upstream: czyt/cfui:v0.9.6
     image: registry.lazycat.cloud/czyt/czyt/cfui:b41f13c0dcfe5fb8
     binds:
       - /lzcapp/var/data:/app/data
