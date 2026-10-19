@@ -1,6 +1,6 @@
 package: community.lazycat.czyt.cfui
 license: MIT
-version: 0.10.5
+version: 0.10.6
 name: Cloudflared UI
 description: "一个现代化的Cloudflare Tunnel (cloudflared)管理面板。"
 min_os_version: 1.5.0
